@@ -12,7 +12,7 @@ public class Language {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "language_id")
-    private Integer id;
+    private Byte id;
     @Column(columnDefinition = "char")
     private String name;
     @Column(name = "last_update")
@@ -22,11 +22,11 @@ public class Language {
     @OneToMany(mappedBy = "language")
     private List<Film> films;
 
-    public Integer getId() {
+    public Byte getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Byte id) {
         this.id = id;
     }
 

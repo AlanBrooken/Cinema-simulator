@@ -12,7 +12,7 @@ public class Store {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "store_id")
-    private Integer id;
+    private Byte id;
 
     @Column(name = "last_update")
     @UpdateTimestamp
@@ -28,4 +28,44 @@ public class Store {
 
     @OneToMany(mappedBy = "store")
     private List<Customer> customers;
+
+    public Byte getId() {
+        return id;
+    }
+
+    public void setId(Byte id) {
+        this.id = id;
+    }
+
+    public LocalDateTime getLastUpdate() {
+        return lastUpdate;
+    }
+
+    public void setLastUpdate(LocalDateTime lastUpdate) {
+        this.lastUpdate = lastUpdate;
+    }
+
+    public Staff getStaff() {
+        return staff;
+    }
+
+    public void setStaff(Staff staff) {
+        this.staff = staff;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public List<Customer> getCustomers() {
+        return customers;
+    }
+
+    public void setCustomers(List<Customer> customers) {
+        this.customers = customers;
+    }
 }
