@@ -1,0 +1,27 @@
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+        <property name="connection.driver_class">com.p6spy.engine.spy.P6SpyDriver</property>
+        <property name="connection.url">jdbc:p6spy:mysql://localhost:3306/movie</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">IoLsaI-100%</property>
+        <property name="connection.pool_size">1</property>
+        <property name="current_session_context_class">thread</property>
+        <property name="show_sql">true</property>
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+
+        <mapping resource="org.hibernateProject.domain.Actor"/>
+        <mapping resource="org.hibernateProject.domain.Address"/>
+        <mapping resource="org.hibernateProject.domain.Category"/>
+        <mapping resource="org.hibernateProject.domain.City"/>
+        <mapping resource="org.hibernateProject.domain.Country"/>
+        <mapping resource="org.hibernateProject.domain.Film"/>
+        <mapping resource="org.hibernateProject.domain.FilmText"/>
+        <mapping resource="org.hibernateProject.domain.Inventory"/>
+        <mapping resource="org.hibernateProject.domain.Language"/>
+        <mapping resource="org.hibernateProject.domain.Payment"/>
+        <mapping resource="org.hibernateProject.domain.Rental"/>
+        <mapping resource="org.hibernateProject.domain.Staff"/>
+        <mapping resource="org.hibernateProject.domain.Store"/>
+
+    </session-factory>
+</hibernate-configuration>
