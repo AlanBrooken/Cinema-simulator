@@ -9,19 +9,22 @@
         <property name="show_sql">true</property>
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
 
-        <mapping resource="org.hibernateProject.domain.Actor"/>
-        <mapping resource="org.hibernateProject.domain.Address"/>
-        <mapping resource="org.hibernateProject.domain.Category"/>
-        <mapping resource="org.hibernateProject.domain.City"/>
-        <mapping resource="org.hibernateProject.domain.Country"/>
-        <mapping resource="org.hibernateProject.domain.Film"/>
-        <mapping resource="org.hibernateProject.domain.FilmText"/>
-        <mapping resource="org.hibernateProject.domain.Inventory"/>
-        <mapping resource="org.hibernateProject.domain.Language"/>
-        <mapping resource="org.hibernateProject.domain.Payment"/>
-        <mapping resource="org.hibernateProject.domain.Rental"/>
-        <mapping resource="org.hibernateProject.domain.Staff"/>
-        <mapping resource="org.hibernateProject.domain.Store"/>
+        <mapping class="org.hibernateProject.domain.Address"/>
+        <mapping class="org.hibernateProject.domain.Actor"/>
+        <mapping class="org.hibernateProject.domain.Category"/>
+        <mapping class="org.hibernateProject.domain.City"/>
+        <mapping class="org.hibernateProject.domain.Customer"/>
+        <mapping class="org.hibernateProject.domain.Country"/>
+        <mapping class="org.hibernateProject.domain.Film"/>
+        <mapping class="org.hibernateProject.domain.FilmText"/>
+        <mapping class="org.hibernateProject.domain.Inventory"/>
+        <mapping class="org.hibernateProject.domain.Language"/>
+        <mapping class="org.hibernateProject.domain.Payment"/>
+        <mapping class="org.hibernateProject.domain.Rental"/>
+        <mapping class="org.hibernateProject.domain.Staff"/>
+        <mapping class="org.hibernateProject.domain.Store"/>
+
+
 
     </session-factory>
 </hibernate-configuration>
